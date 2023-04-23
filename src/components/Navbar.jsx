@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Navbar as BsNavbar, Nav, Button } from 'react-bootstrap';
+import './styles/Navbar.css'
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -21,34 +22,34 @@ class Navbar extends React.Component {
     const { expanded } = this.state;
 
     return (
-      <BsNavbar expand="lg" fixed="top" expanded={expanded} onToggle={this.toggleMenu}>
+      <BsNavbar bg="dark" expand="lg" fixed="top" expanded={expanded} onToggle={this.toggleMenu} className="navbar-dark">
         <Container>
-          <BsNavbar.Brand href="#page-top">Celine Is Awesome</BsNavbar.Brand>
+          <BsNavbar.Brand href="#page-top" className="text-white">Celine Is Awesome</BsNavbar.Brand>
           <BsNavbar.Toggle aria-controls="basic-navbar-nav" />
           <BsNavbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Item>
-                <Nav.Link href="#services" onClick={this.closeMenu}>
+                <Nav.Link href="#services" onClick={this.closeMenu} className="text-white">
                   Services
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#portfolio" onClick={this.closeMenu}>
+                <Nav.Link href="#portfolio" onClick={this.closeMenu} className="text-white">
                   Portfolio
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#about" onClick={this.closeMenu}>
+                <Nav.Link href="#about" onClick={this.closeMenu} className="text-white">
                   About
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#team" onClick={this.closeMenu}>
+                <Nav.Link href="#team" onClick={this.closeMenu} className="text-white">
                   Team
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#contact" onClick={this.closeMenu}>
+                <Nav.Link href="#contact" onClick={this.closeMenu} className="text-white">
                   Contact
                 </Nav.Link>
               </Nav.Item>

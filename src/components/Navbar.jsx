@@ -26,7 +26,18 @@ class Navbar extends React.Component {
 
         <Container>
           <BsNavbar.Brand href="#page-top" className="text-white">Celine Is Awesome</BsNavbar.Brand>
-          <BsNavbar.Toggle aria-controls="basic-navbar-nav" />
+          <button
+  className={`hamburger hamburger--squeeze ${expanded ? "is-active" : ""}`}
+  type="button"
+  aria-label="Menu"
+  aria-controls="basic-navbar-nav"
+  aria-expanded={expanded}
+  onClick={this.toggleMenu}
+>
+  <span className="hamburger-box">
+    <span className="hamburger-inner"></span>
+  </span>
+</button>
           <BsNavbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Item>

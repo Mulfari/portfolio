@@ -22,7 +22,8 @@ class Navbar extends React.Component {
     const { expanded } = this.state;
 
     return (
-      <BsNavbar bg="dark" expand="lg" fixed="top" expanded={expanded} onToggle={this.toggleMenu} className="navbar-dark">
+<BsNavbar className="custom-navbar" expand="lg" fixed="top" expanded={expanded} onToggle={this.toggleMenu}>
+
         <Container>
           <BsNavbar.Brand href="#page-top" className="text-white">Celine Is Awesome</BsNavbar.Brand>
           <BsNavbar.Toggle aria-controls="basic-navbar-nav" />

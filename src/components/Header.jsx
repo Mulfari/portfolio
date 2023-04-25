@@ -4,11 +4,13 @@ import './styles/Header.css'
 const Header = () => {
   return (
     <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Hello Errbody</div>
-                <div class="intro-heading">Yes Mel, Ajmal, Chien, Junne maybe and Syok.</div>
-                <a href="#services" class="page-scroll btn btn-xl">Aku Bukan Sempit</a>
+        <div className="container">
+            <div className="intro-text">
+                <div className="background-window">
+                    <div className="intro-lead-in">Hello Errbody</div>
+                    <div className="intro-heading">Yes Mel, Ajmal, Chien, Junne maybe and Syok.</div>
+                    <a href="#services" className="page-scroll btn btn-xl">Aku Bukan Sempit</a>
+                </div>
             </div>
         </div>
     </header>

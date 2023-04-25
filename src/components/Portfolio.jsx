@@ -15,6 +15,12 @@ const Portfolio = () => {
       title: 'Startup Framework',
       subtitle: 'Website Design',
     },
+    {
+      id: 3,
+      imgSrc: 'https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0',
+      title: 'Startup Framework',
+      subtitle: 'Website Design',
+    },
     // ... Agrega los demás elementos de tu portafolio aquí
   ];
 

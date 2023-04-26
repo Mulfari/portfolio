@@ -1,5 +1,6 @@
-import React from 'react';
-import './styles/Portfolio.css'
+import React, { useState } from 'react';
+import { Modal } from 'react-bootstrap';
+import './styles/Portfolio.css';
 
 const Portfolio = () => {
   const portfolioItems = [
@@ -21,29 +22,37 @@ const Portfolio = () => {
       title: 'Startup Framework',
       subtitle: 'Website Design',
     },
-    // ... Agrega los demás elementos de tu portafolio aquí
   ];
+
+  const [showModal, setShowModal] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <section id="portfolio" className="bg-light-gray">
       <div className="container">
         <div className="row">
-          <div className="col-lg-12 text-center">
-            <h2 className="section-heading">Portfolio</h2>
-            <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div className="row">
           {portfolioItems.map(item => (
             <div key={item.id} className="col-md-4 col-sm-6 portfolio-item">
-              <a href={`#portfolioModal${item.id}`} className="portfolio-link" data-toggle="modal">
+              <div
+                className="portfolio-link"
+                onClick={() => handleItemClick(item)}
+              >
                 <div className="portfolio-hover">
                   <div className="portfolio-hover-content">
                     <i className="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
                 <img src={item.imgSrc} className="img-responsive" alt="" />
-              </a>
+              </div>
               <div className="portfolio-caption">
                 <h4>{item.title}</h4>
                 <p className="text-muted">{item.subtitle}</p>
@@ -52,6 +61,25 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
+
+      {selectedItem && (
+        <Modal show={showModal} onHide={handleCloseModal} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedItem.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="modal-img-container">
+            <img src={selectedItem.imgSrc} className="img-responsive modal-img" alt="" />
+          </div>
+          <p>{selectedItem.subtitle}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <button onClick={handleCloseModal} className="btn btn-primary">
+            Cerrar
+          </button>
+        </Modal.Footer>
+      </Modal>
+      )}
     </section>
   );
 };

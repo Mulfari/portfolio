@@ -24,7 +24,7 @@ class Navbar extends React.Component {
     return (
       <BsNavbar className="custom-navbar" expand="lg" fixed="top" expanded={expanded} onToggle={this.toggleMenu}>
         <Container>
-          <BsNavbar.Brand href="#page-top" className="text-white">Web Developer</BsNavbar.Brand>
+          <BsNavbar.Brand href="#" className="text-white">Web Developer</BsNavbar.Brand>
           <button
             className={`hamburger hamburger--squeeze ${expanded ? "is-active" : ""}`}
             type="button"

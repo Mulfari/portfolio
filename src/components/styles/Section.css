@@ -56,6 +56,7 @@ section h3.section-subheading {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px;
+  min-height: 320px; /* Establecer una altura mínima para todas las cajas */
 }
 
 .info-box:hover {
@@ -64,6 +65,10 @@ section h3.section-subheading {
   transition: all 0.3s ease;
 }
 
+.about-heading {
+  text-align: center; /* Centrar el título de cada caja */
+}
 
-
-
+.info-box p.text-muted {
+  text-align: left; /* Alinear el texto a la izquierda */
+}

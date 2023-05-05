@@ -7,8 +7,9 @@ const Header = () => {
       <div className="container">
         <div className="intro-text">
           <div className="background-window">
-            <div className="intro-lead-in">¡Hola!</div>
-            <div className="intro-heading">Bienvenido a mi portafolio, Si deseas contactarme.</div>
+            <div className="intro-lead-in">¡Hola, soy Salvador!</div>
+            <div className="intro-heading">desarrollador web fulL stack</div>
+            <p className="contact-text">Echa un vistazo a mi trabajo y siéntete libre de contactarme.</p>
           </div>
         </div>
       </div>

@@ -42,9 +42,9 @@ const Portfolio = () => {
       link: 'https://fastidious-blini-2b7661.netlify.app/',
       description: (
         <>
-          "Rick y Morty App" es una aplicación web interactiva creada con JavaScript y React, que permite a los fanáticos de la serie de animación Rick y Morty explorar y descubrir información detallada sobre sus personajes favoritos. La aplicación utiliza la API de Rick y Morty para obtener datos precisos y actualizados sobre los personajes, incluyendo imágenes, nombres, especies, géneros, estatus y más.
+          Aplicación web interactiva creada con JavaScript y React, permite explorar y descubrir información detallada sobre los personajes de la serie. La aplicación utiliza la API de Rick y Morty para obtener datos precisos y actualizados sobre los personajes, incluyendo imágenes, nombres, especies, géneros, estatus y más.
           <br />
-          La aplicación presenta una interfaz de usuario intuitiva y atractiva, donde los usuarios pueden navegar fácilmente a través de una lista de personajes o utilizar la función de búsqueda para encontrar personajes específicos por nombre. Con una amplia gama de detalles disponibles y una experiencia de usuario fluida, "Rick y Morty App" es perfecta para aquellos que deseen sumergirse más en el universo de Rick y Morty.
+          Interfaz de usuario intuitiva y atractiva, donde los usuarios pueden navegar fácilmente a través de una lista de personajes o utilizar la función de búsqueda para encontrar personajes específicos por nombre.
         </>
       ),
     },    

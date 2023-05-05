@@ -28,14 +28,6 @@
   stroke: #0077B5;
 }
 
-.linkedin-icon:hover .icon-tabler-brand-facebook {
-  stroke: #1877F2;
-}
-
-.linkedin-icon:hover .icon-tabler-brand-instagram {
-  stroke: #C13584;
-}
-
 .linkedin-icon:hover .icon-tabler-brand-telegram {
   stroke: #006dcc;
 }

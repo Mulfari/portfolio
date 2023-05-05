@@ -27,3 +27,43 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
+
+.profile-container {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.profile-container {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #ccc; /* Puedes cambiar el color de fondo a uno que prefieras */
+  margin: 0 auto;
+}
+
+.info-box {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.info-box:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+
+
+
